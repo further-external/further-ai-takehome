@@ -1,0 +1,28 @@
+# Environment variables
+.env
+.venv/
+
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Pytest
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Claude Code
+CLAUDE.md
+*.ipynb
+
+# Dirs
+sandbox/
+.langgraph_api/

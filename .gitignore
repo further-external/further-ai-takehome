@@ -1,0 +1,10 @@
+# IDEs
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Dirs
+sandbox/
+.langgraph_api/
