@@ -19,10 +19,10 @@ def chat_model(model: str = "default"):
     To use your own keys for other providers, uncomment the relevant
     imports above and add elif branches below.
     """
-
+    # Using the Google AI Studio free teir, gemini-3.1-flash-lite-preview provides the highest current RPM/RPD
     if model == "default":
         return ChatGoogleGenerativeAI(
-            model="gemini-2.5-flash",
+            model="gemini-3.1-flash-lite-preview", 
             temperature=1.0,
         )
 
@@ -37,28 +37,28 @@ def chat_model(model: str = "default"):
 def search_model(model: str = 'default'):
 
     search_llm = ChatGoogleGenerativeAI(
-            model='gemini-3-flash-preview',
-            temperature=1.0,  # Gemini 3.0 recommend temp=1
+            model='gemini-3.1-flash-lite-preview',
+            temperature=1.0, 
         )
     search_llm = search_llm.bind_tools([{"google_search": {}}])
 
-    if model == 'sonnet-4.5':
-        search_llm = ChatAnthropic(
-            model='claude-sonnet-4-5-20250929',  # type: ignore
-        ) # type: ignore
-        search_llm = search_llm.bind_tools([
-            {
-                "type": "web_search_20250305",
-                "name": "web_search",
-            }
-        ])
+    # if model == 'sonnet-4.5':
+    #     search_llm = ChatAnthropic(
+    #         model='claude-sonnet-4-5-20250929',  # type: ignore
+    #     ) # type: ignore
+    #     search_llm = search_llm.bind_tools([
+    #         {
+    #             "type": "web_search_20250305",
+    #             "name": "web_search",
+    #         }
+    #     ])
 
-    if model == 'gpt-4.1':
-        search_llm = ChatOpenAI(
-            model='gpt-4.1-2025-04-14',
-            stream_usage=True,
-            output_version='responses/v1',
-        )
-        search_llm = search_llm.bind_tools([{"type": "web_search"}])
+    # if model == 'gpt-4.1':
+    #     search_llm = ChatOpenAI(
+    #         model='gpt-4.1-2025-04-14',
+    #         stream_usage=True,
+    #         output_version='responses/v1',
+    #     )
+    #     search_llm = search_llm.bind_tools([{"type": "web_search"}])
 
     return search_llm
