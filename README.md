@@ -24,7 +24,7 @@ Build an AI agent in one of the domains below. The agent should feel meaningfull
   * **UI is optional** — feel free to vibe code it, use the default LangGraph Studio UI, a CLI, or skip it entirely.
   * **Doesn’t need to be conversational** — a workflow-based or task-based agent is fine.
   * **Tech stack is your choice** — use whatever you’re most productive with. However, we ask that you **please use the LangGraph dev server** so that we can effectively review your code.
-  * **Model provider:** We’ll ask that you create an account at ai.google.dev and obtain a free API key. You’re also welcome to use your own keys for any provider.
+  * **Model provider:** We’ll ask that you create an account at ai.google.dev and obtain a free API key. If you hit rate limits, you can reach out to the hiring team to receive an API key from Further. You’re also welcome to use your own keys from any provider.
 
 ## **Submission Instructions**
 
