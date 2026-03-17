@@ -28,10 +28,9 @@ Build an AI agent in one of the domains below. The agent should feel meaningfull
 
 ## **Submission Instructions**
 
-1.  **We’ll add your GitHub username** to the further-ai-takehome repo with Read access.
-2.  **Clone the repo locally**, then push to a new private repository on your own GitHub account.
-3.  **Build your solution** in your private repo.
-4.  **When ready**, add us as collaborators to your private repo so we can review.
+1.  **Clone the repo locally**, then push to a new private repository on your own GitHub account.
+2.  **Build your solution** in your private repo.
+3.  **When ready**, add us as collaborators to your private repo so we can review.
 
 Keep in mind that we will be using LangGraph Studio to evaluate what you build.
 
